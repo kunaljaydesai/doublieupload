@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+</head>
+
+<html>
+<body
+
+>
+	<style>
+		#overlay { display:none;    
+   position:fixed;  
+   left:0px;        
+   top:0px;         
+   width:100%;      
+   height:100%;     
+   background:#000; 
+   opacity:0.5;     
+   z-index:1;   
+}
+
+#popup {
+   display:none;
+   position:fixed;
+   left:35%;           
+   top:10%;   
+   bottom:50%;
+   right: 50%;          
+   width:500px;        
+   height:350px;   
+	background-image:url(http://www.eonline.com/eol_images/Entire_Site/2013730/rs_560x415-130830150852-1024..miley-cyrus-twerk-vma.ls.83013.jpg);; 
+   border:2px solid #000;  
+   z-index:2;      
+
+}
+</style>
+
+
+	 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js" type="text/javascript"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script>
+
+  window.onload = function() {
+ 
+   document.getElementById("Upload").onclick = function(){
+      var overlay = document.getElementById("overlay");
+      
+      var popup = document.getElementById("popup");
+
+      
+      overlay.style.display = "block";
+      
+      popup.style.display = "block";
+   };
+};
+</script>
+
+<button class="btn btn-primary" id="Upload">Upload Image</a>
+<div id="overlay"></div>
+<div id="popup">
+  
+	<div class="container-fluid">
+				<h1> <font color="white"> Doublie Upload </font></h1>
+				<div class="form-group">
+    				
+    				<input type="text" class="form-control" id="exampleInputEmail2" placeholder="Enter Doublie Title">
+  				</div>
+				<div class="form-group">
+    				
+    				<input type="text" class="form-control" id="exampleInputEmail2" placeholder="Enter Doublie Tags">
+  				</div>
+  				<div class="form-group">
+    				
+    				<input type="text" class="form-control" id="exampleInputEmail2" placeholder="Enter Doublie Hashtag">
+  				</div>
+				<div class="form-group">
+	   			 
+	   			 	<input type="file" id="exampleInputFile">
+
+	   			 	
+	  			</div>
+
+
+	  			<label><font color="white">√ High Quality Image</font></label>
+	  			</br>
+	  			<label><font color="white">√ Transparency</font></label>
+	  			</br>
+	  			<label><font color="white">√ PNG File</font></label>
+	  			
+
+		   		
+	</div>
+			
+
+		
+
+	
+
+</div>
+
+</body>
+</html>
